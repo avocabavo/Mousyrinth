@@ -11,6 +11,10 @@
   border-radius: 50%
 }
 
+.ml-zapper:has(.ml-zapper__blocker:hover) {
+  z-index: 2;
+}
+
 .ml-zapper__blocker {
   position: absolute;
   left: 0;

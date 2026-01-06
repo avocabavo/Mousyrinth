@@ -22,6 +22,7 @@
 .ml-gateway:hover {
   width: 12vw;
   height: 5vw;
+  z-index: 3;
 }
 
 /* Doorway (always visible) */
