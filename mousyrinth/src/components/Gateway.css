@@ -1,0 +1,62 @@
+/* Root gateway container */
+.ml-gateway {
+  position: absolute;
+
+  width: 5vw;
+  height: 5vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Expansion animation */
+  transition: width 250ms ease;
+
+  /* Optional: prevent layout shift from affecting others */
+  overflow: hidden;
+
+  background: gold;
+}
+
+/* Expanded state */
+.ml-gateway:hover {
+  width: 12vw;
+  height: 5vw;
+}
+
+/* Doorway (always visible) */
+.ml-gateway__doorway,
+.ml-gateway__door {
+  position: absolute;
+  left: 0;
+
+  width: auto;
+  height: 100%;
+
+  pointer-events: none;
+}
+
+/* Door (fades out) */
+.ml-gateway__door {
+  transition: opacity 300ms ease;
+}
+
+.ml-gateway:hover .ml-gateway__door {
+  opacity: 0;
+}
+
+.ml-gateway__link-container {
+    position: absolute;
+    left: 5.5vw;
+    width: 6vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Link (hidden initially) */
+.ml-gateway__link {
+  font-size: 1vw;
+  text-decoration: none;
+}
+
