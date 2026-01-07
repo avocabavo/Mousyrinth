@@ -1,0 +1,98 @@
+.ml-solar-system {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+}
+
+.ml-star {
+    position: absolute;
+    inset: 0;
+
+    animation: ml-orbit-cw linear infinite;
+    animation-duration: var(--star-rotation-duration);
+
+    pointer-events: none;
+
+    z-index: var(--star-z);
+}
+.ml-star__visual {
+    position: absolute;
+    inset: 0;
+
+    border-radius: 50%;
+    background: palegoldenrod;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.ml-planet-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10vw;
+    height: 10vw;
+
+    transform:
+        translate(-50%, -50%)
+        translateX(var(--planet-orbit-radius))
+        rotate(180deg);
+    pointer-events: none;
+}
+.ml-planet__visual {
+    position: absolute;
+    inset: 0;
+
+    border-radius: 50%;
+    background: turquoise;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.ml-planet-rotation {
+    position: absolute;
+    inset: 0;
+    animation: ml-orbit-ccw linear infinite;
+    animation-duration: var(--planet-rotation-duration);
+
+    z-index: var(--planet-z);
+    pointer-events: none;
+}
+
+.ml-moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7vw;
+    height: 7vw;
+
+    border-radius: 50%;
+    background-color: silver;
+
+    transform:
+        translate(-50%, -50%) translateX(var(--moon-orbit-radius));
+
+    z-index: var(--moon-z);
+
+    pointer-events:all;
+}
+
+@keyframes ml-orbit-cw {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ml-orbit-ccw {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}

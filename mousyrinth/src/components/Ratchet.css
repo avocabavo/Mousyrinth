@@ -25,6 +25,7 @@
     position: absolute;
     inset: 0;
     left: 50%;
+    border-radius: 0 2.5vw 2.5vw 0;
 
     background: transparent;
 }
@@ -33,6 +34,7 @@
     position: absolute;
     inset: 0;
     right: 50%;
+    border-radius: 2.5vw 0 0 2.5vw;
 
     background: transparent;
 }

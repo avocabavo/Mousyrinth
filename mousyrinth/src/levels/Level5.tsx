@@ -35,6 +35,12 @@ export function Level5() {
                 width="25vw"
                 height="5vw"
             />
+            <Brick
+                top="15vw"
+                left="45vw"
+                width="5vw"
+                height="25vw"
+            />
 
             {zappers.map((z, i) => (
                 <Zapper key={i} left={z.left} top={z.top} />
