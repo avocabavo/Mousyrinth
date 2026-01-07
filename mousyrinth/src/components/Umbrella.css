@@ -44,7 +44,15 @@
   width: 100%;
   height: 100%;
 
+  transform: rotate(-30deg);
+  transition: transform var(--umbrella-close-time) ease;
+
   pointer-events: none;
+}
+
+.ml-umbrella:has(.ml-umbrella__blocker:hover) .ml-umbrella__image-holder {
+  transform: none;
+  transition: transform var(--umbrella-open-time) ease;
 }
 
 .ml-umbrella__handle,

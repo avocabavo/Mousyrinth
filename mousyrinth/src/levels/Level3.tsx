@@ -35,13 +35,12 @@ export function Level3() {
 
     return (
         <div className="ml-level" style={levelStyle}>
-            <Umbrella
-                left="15vw"
-                top="20vw"
-            />
-
-            {umbrellaRingPositions.map(position=> (
-                <Umbrella { ...{left: position.left + "vw", top: position.top + "vw"} } />
+            {umbrellaRingPositions.map((position, i)=> (
+                <Umbrella
+                    key={i}
+                    left={position.left + "vw"}
+                    top={position.top + "vw"}
+                />
             ))}
 
             <Gateway
