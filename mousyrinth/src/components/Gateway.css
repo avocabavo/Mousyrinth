@@ -1,6 +1,7 @@
 /* Root gateway container */
 .ml-gateway {
   position: absolute;
+  z-index: var(--gateway-z);
 
   width: 5vw;
   height: 5vw;
@@ -22,7 +23,7 @@
 .ml-gateway:hover {
   width: 12vw;
   height: 5vw;
-  z-index: 3;
+  z-index: var(--gateway-open-z);
 }
 
 /* Doorway (always visible) */

@@ -1,3 +1,19 @@
+/* z-index handling of component interactions */
+* {
+  --gateway-z: 1;
+  --gateway-open-z: 3;
+
+  --zapper-z: 1;
+  --zapper-open-z: 2;
+
+  --umbrella-z: 1;
+  --umbrella-open-z: 2;
+
+  --brick-z: 5;
+  --brick-open-z: 6;
+}
+
+
 #root {
   position: relative;
   background: darkgray;

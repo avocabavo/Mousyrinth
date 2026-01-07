@@ -1,6 +1,6 @@
 /* Root umbrella container */
 .ml-umbrella {
-  z-index: 1;
+  z-index: var(--umbrella-z);
 
   position: absolute;
 
@@ -15,7 +15,7 @@
 }
 
 .ml-umbrella:has(.ml-umbrella__blocker:hover) {
-  z-index: 2;
+  z-index: var(--umbrella-open-z);
 }
 
 .ml-umbrella__blocker {
