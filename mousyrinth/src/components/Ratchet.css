@@ -1,0 +1,62 @@
+.ml-ratchet {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    z-index: var(--ratchet-z);
+
+    background: limegreen;
+    border-radius: 50%;
+
+    transform: none;
+    transition: transform 15000ms linear;
+}
+
+.ml-ratchet:has(.ml-ratchet__cw-arrow:hover) {
+    transform: rotate(720deg);
+    transition: transform 5000ms linear;
+}
+
+.ml-ratchet:has(.ml-ratchet__ccw-arrow:hover) {
+    transform: rotate(-720deg);
+    transition: transform 5000ms linear;
+}
+
+.ml-ratchet__ccw-arrow {
+    position: absolute;
+    inset: 0;
+    left: 50%;
+
+    background: transparent;
+}
+
+.ml-ratchet__cw-arrow {
+    position: absolute;
+    inset: 0;
+    right: 50%;
+
+    background: transparent;
+}
+
+.ml-ratchet__paddle {
+    position: absolute;
+    top: -22vw;
+    left: 0;
+    right: 0;
+    bottom: 7vw;
+
+    background: limegreen;
+    border-radius: 2vw;
+    opacity: 0.7;
+
+    overflow: hidden;
+}
+
+.ml-ratchet__arrows {
+    position: absolute;
+    inset: 0;
+    top: 0.2vw;
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}

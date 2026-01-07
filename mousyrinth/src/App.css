@@ -1,16 +1,18 @@
 /* z-index handling of component interactions */
 * {
   --gateway-z: 1;
-  --gateway-open-z: 3;
+  --gateway-open-z: 4;
 
   --zapper-z: 1;
-  --zapper-open-z: 2;
+  --zapper-open-z: 6;
 
   --umbrella-z: 1;
-  --umbrella-open-z: 2;
+  --umbrella-open-z: 3;
 
   --brick-z: 5;
   --brick-open-z: 6;
+
+  --ratchet-z: 2;
 }
 
 
