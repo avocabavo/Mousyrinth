@@ -1,8 +1,31 @@
-.ml-level {
-    width: 100vw;
+.pagework {
+    height: 100vh;
+}
+
+.mid-section {
+    position: fixed;
+    top: 4vh;
+    bottom: 4vh;
+    left: 0;
+    width: 100%;
+    height: calc(92vh);
+
+    min-height: 0;
+}
+
+.level-holder {
     position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.level-itself {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
     background: #181818;
-    overflow: hidden;
 }
 
 .victory {

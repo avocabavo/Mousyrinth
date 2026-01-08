@@ -1,5 +1,6 @@
-import { Umbrella } from "../components/Umbrella";
+import { BarrierStrip } from "../components/BarrierStrip";
 import { Gateway } from "../components/Gateway";
+import { Umbrella } from "../components/Umbrella";
 
 type vwPosition = {
     left: number;
@@ -34,21 +35,29 @@ export function Level3() {
     );
 
     return (
-        <div className="ml-level" style={levelStyle}>
-            {umbrellaRingPositions.map((position, i)=> (
-                <Umbrella
-                    key={i}
-                    left={position.left + "vw"}
-                    top={position.top + "vw"}
-                />
-            ))}
+        <div className="pagework">
+            <BarrierStrip placement="ceiling" />
+            <div className="mid-section">
+                <div className="level-holder">
+                    <div className="level-itself" style={levelStyle}>
+                        {umbrellaRingPositions.map((position, i)=> (
+                            <Umbrella
+                                key={i}
+                                left={position.left + "vw"}
+                                top={position.top + "vw"}
+                            />
+                        ))}
 
-            <Gateway
-                left="65vw"
-                top="20vw"
-                text="Level 4"
-                to="/level/4"
-            />
+                        <Gateway
+                            left="65vw"
+                            top="20vw"
+                            text="Level 4"
+                            to="/level/4"
+                        />
+                    </div>
+                </div>
+            </div>
+            <BarrierStrip placement="floor" />
         </div>
     );
 }

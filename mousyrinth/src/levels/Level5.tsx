@@ -1,3 +1,4 @@
+import { BarrierStrip } from "../components/BarrierStrip";
 import { Gateway } from "../components/Gateway";
 import { Brick } from "../components/Brick";
 import { Zapper } from "../components/Zapper";
@@ -16,45 +17,53 @@ export function Level5() {
     const zappers = parseZapperLayoutCsv(zapperLayoutCsv);
 
     return (
-        <div className="ml-level" style={levelStyle}>
-            <Brick
-                top="15vw"
-                left="10vw"
-                width="5vw"
-                height="25vw"
-            />
-            <Brick
-                top="15vw"
-                left="10vw"
-                width="25vw"
-                height="5vw"
-            />
-            <Brick
-                top="35vw"
-                left="10vw"
-                width="25vw"
-                height="5vw"
-            />
-            <Brick
-                top="15vw"
-                left="45vw"
-                width="5vw"
-                height="25vw"
-            />
+        <div className="pagework">
+            <BarrierStrip placement="ceiling" />
+            <div className="mid-section">
+                <div className="level-holder">
+                    <div className="level-itself" style={levelStyle}>
+                        <Brick
+                            top="15vw"
+                            left="10vw"
+                            width="5vw"
+                            height="25vw"
+                        />
+                        <Brick
+                            top="15vw"
+                            left="10vw"
+                            width="25vw"
+                            height="5vw"
+                        />
+                        <Brick
+                            top="35vw"
+                            left="10vw"
+                            width="25vw"
+                            height="5vw"
+                        />
+                        <Brick
+                            top="15vw"
+                            left="45vw"
+                            width="5vw"
+                            height="25vw"
+                        />
 
-            {zappers.map((z, i) => (
-                <Zapper key={i} left={z.left} top={z.top} />
-            ))}
+                        {zappers.map((z, i) => (
+                            <Zapper key={i} left={z.left} top={z.top} />
+                        ))}
 
-            <Ratchet  top="25vw" left="5vw" />
-            <Ratchet  top="25vw" left="50vw" />
+                        <Ratchet  top="25vw" left="5vw" />
+                        <Ratchet  top="25vw" left="50vw" />
 
-            <Gateway
-                left="15vw"
-                top="30vw"
-                text="Level 6"
-                to="/level/6"
-            />
+                        <Gateway
+                            left="15vw"
+                            top="30vw"
+                            text="Level 6"
+                            to="/level/6"
+                        />
+                    </div>
+                </div>
+            </div>
+            <BarrierStrip placement="floor" />
         </div>
     );
 }

@@ -1,0 +1,16 @@
+.barrier-strip {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 4vh;
+    z-index: var(--barrier-strip-z);
+    background: darkorange;
+}
+
+.barrier-strip-ceiling {
+    top: 0;
+}
+
+.barrier-strip-floor {
+    bottom: 0;
+}
