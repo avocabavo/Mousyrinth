@@ -7,7 +7,7 @@ export function Victory() {
 
     return (
         <div className="ml-level" style={levelStyle}>
-            <h1>Victory!</h1>
+            <h1 className="victory">Victory!</h1>
         </div>
     );
 }

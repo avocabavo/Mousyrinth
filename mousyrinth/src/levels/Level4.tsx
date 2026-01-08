@@ -35,8 +35,8 @@ export function Level4() {
             <Gateway
                 left="45vw"
                 top="5vw"
-                text="Victory!"
-                to="/level/Victory"
+                text="Level 5"
+                to="/level/5"
             />
         </div>
     );
