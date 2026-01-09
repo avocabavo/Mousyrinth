@@ -4,13 +4,19 @@
     width: 100%;
     height: 4vh;
     z-index: var(--barrier-strip-z);
-    background: darkorange;
+}
+
+.barrier-strip:hover {
+    height: 96vh;
+    opacity: 0.5;
 }
 
 .barrier-strip-ceiling {
     top: 0;
+    background: slateblue;
 }
 
 .barrier-strip-floor {
     bottom: 0;
+    background: saddlebrown;
 }
