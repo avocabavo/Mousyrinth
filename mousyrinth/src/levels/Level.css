@@ -20,12 +20,15 @@
     overflow-y: scroll;
 }
 
+
+
 .level-itself {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     background: #181818;
+    overflow: hidden;
 }
 
 .victory {
@@ -33,4 +36,5 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin: 0;
 }
