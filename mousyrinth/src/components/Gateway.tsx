@@ -31,7 +31,7 @@ export function Gateway({ left, top, text, to }: GatewayProps) {
             />
 
             <div className="ml-gateway__link-container">
-                <Link className="ml-gateway__link" to={to}>
+                <Link className="ml-gateway__link" to={to} tabIndex={-1}>
                     {text}
                 </Link>
             </div>
