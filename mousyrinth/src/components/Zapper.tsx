@@ -1,3 +1,11 @@
+/*
+Zappers are the standard soft barrier in the maze.
+
+Zappers block out the level instantly and completely when touched.
+
+Most other blockers render _over_ Zappers, allowing the mouse to get past Zappers.
+*/
+
 import "./Zapper.css";
 
 type ZapperProps = {

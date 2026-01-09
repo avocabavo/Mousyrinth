@@ -1,3 +1,9 @@
+/*
+Umbrellas are blocker elements that expand quickly to a significant but limited radius when hovered, and retract to their original radius slowly when not hovered.
+
+This can make the level easier or harder because the expanded Umbrella blocking other elements' hover effects can be a good thing or a bad thing.
+*/
+
 import "./Umbrella.css";
 
 type UmbrellaProps = {

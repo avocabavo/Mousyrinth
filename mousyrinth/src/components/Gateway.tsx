@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+/*
+A Gateway is the objective of each level, containing a link to the next level that is only revealed when the gateway itself is hovered.
+*/
 
-// import { ReactComponent as DoorwaySvg } from '../assets/svg/doorway.svg';
-// import { ReactComponent as DoorSvg } from '../assets/svg/door.svg';
+import { Link } from "react-router-dom";
 
 import "./Gateway.css";
 

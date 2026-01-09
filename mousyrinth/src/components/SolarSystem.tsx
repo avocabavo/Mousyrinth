@@ -1,3 +1,8 @@
+/*
+The Moon part of a Solar System element blocks, but this component has no hover triggers.
+Unlike other components, the parts of a Solar System move steadily along predefined orbit-like paths.
+*/
+
 import "./SolarSystem.css";
 
 type SolarSystemProps = {

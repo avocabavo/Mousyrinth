@@ -1,3 +1,9 @@
+/*
+A Ratchet is shaped like an exclaimation point.
+Hovering over either half of the dot will rotate this element around the dot, potentially covering other elements and allowing the mouse to pass over those other elements without triggering their hovers.
+This element will slowly return to its resting orientation when not hovered.
+*/
+
 import "./Ratchet.css";
 
 type RatchetProps = {

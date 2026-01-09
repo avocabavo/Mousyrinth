@@ -1,3 +1,11 @@
+/*
+Bricks are the standard hard barrier in the maze.
+
+Bricks block out the level instantly and completely when touched.
+
+Most other blockers render _under_ bricks.
+*/
+
 import "./Brick.css";
 
 type BrickProps = {
