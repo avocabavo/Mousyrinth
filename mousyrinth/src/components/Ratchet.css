@@ -1,4 +1,4 @@
-.ml-ratchet {
+.ratchet {
     position: absolute;
     width: 5vw;
     height: 5vw;
@@ -11,17 +11,17 @@
     transition: transform 15000ms linear;
 }
 
-.ml-ratchet:has(.ml-ratchet__cw-arrow:hover) {
+.ratchet:has(.ratchet-cw-arrow:hover) {
     transform: rotate(720deg);
     transition: transform 5000ms linear;
 }
 
-.ml-ratchet:has(.ml-ratchet__ccw-arrow:hover) {
+.ratchet:has(.ratchet-ccw-arrow:hover) {
     transform: rotate(-720deg);
     transition: transform 5000ms linear;
 }
 
-.ml-ratchet__ccw-arrow {
+.ratchet-ccw-arrow {
     position: absolute;
     inset: 0;
     left: 50%;
@@ -30,7 +30,7 @@
     background: transparent;
 }
 
-.ml-ratchet__cw-arrow {
+.ratchet-cw-arrow {
     position: absolute;
     inset: 0;
     right: 50%;
@@ -39,7 +39,7 @@
     background: transparent;
 }
 
-.ml-ratchet__paddle {
+.ratchet-paddle {
     position: absolute;
     top: -22vw;
     left: 0;
@@ -53,7 +53,7 @@
     overflow: hidden;
 }
 
-.ml-ratchet__arrows {
+.ratchet-arrows {
     position: absolute;
     inset: 0;
     top: 0.2vw;

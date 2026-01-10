@@ -11,19 +11,27 @@ import "./Zapper.css";
 type ZapperProps = {
     left: string;
     top: string;
+    width?: string;
+    height?: string;
 };
 
-export function Zapper({ left, top }: ZapperProps) {
-    const style = { left, top };
+export function Zapper({ left, top, width="5vw", height="5vw" }: ZapperProps) {
+    const style = {
+        "--zapper-left": left,
+        "--zapper-top": top,
+        "--zapper-width": width,
+        "--zapper-height": height
+    } as React.CSSProperties;
     return (
-        <div className="ml-zapper" style={style}>
+        <div className="zapper" style={style}>
             <img
-                className="ml-zapper__lantern"
+                className="zapper-lantern"
+                style={style}
                 src="/svg/lantern.svg"
                 alt=""
                 draggable={false}
             />
-            <div className="ml-zapper__blocker"></div>
+            {/* <div className="zapper__blocker"></div> */}
         </div>
     );
 }

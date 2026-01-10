@@ -32,15 +32,15 @@ export function SolarSystem({
      };
     return (
         <div
-            className="ml-solar-system"
+            className="solar-system"
             style={style}
         >
-            <div className="ml-star">
-                <div className="ml-star__visual"></div>
-                <div className="ml-planet-orbit">
-                    <div className="ml-planet__visual"></div>
-                    <div className="ml-planet-rotation">
-                        <div className="ml-moon" />
+            <div className="star">
+                <div className="star-visual"></div>
+                <div className="planet-orbit">
+                    <div className="planet-visual"></div>
+                    <div className="planet-rotation">
+                        <div className="moon" />
                     </div>
                 </div>
             </div>

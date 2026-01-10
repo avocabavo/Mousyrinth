@@ -1,10 +1,10 @@
-.ml-solar-system {
+.solar-system {
     position: absolute;
     width: 20vw;
     height: 20vw;
 }
 
-.ml-star {
+.star {
     position: absolute;
     inset: 0;
 
@@ -15,7 +15,7 @@
 
     z-index: var(--star-z);
 }
-.ml-star__visual {
+.star-visual {
     position: absolute;
     inset: 0;
 
@@ -25,7 +25,7 @@
     pointer-events: none;
 }
 
-.ml-planet-orbit {
+.planet-orbit {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +38,7 @@
         rotate(180deg);
     pointer-events: none;
 }
-.ml-planet__visual {
+.planet-visual {
     position: absolute;
     inset: 0;
 
@@ -49,7 +49,7 @@
     z-index: -1;
 }
 
-.ml-planet-rotation {
+.planet-rotation {
     position: absolute;
     inset: 0;
     animation: ml-orbit-ccw linear infinite;
@@ -59,7 +59,7 @@
     pointer-events: none;
 }
 
-.ml-moon {
+.moon {
     position: absolute;
     top: 50%;
     left: 50%;

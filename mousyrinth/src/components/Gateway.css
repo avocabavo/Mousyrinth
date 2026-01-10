@@ -1,5 +1,4 @@
-/* Root gateway container */
-.ml-gateway {
+.gateway {
   position: absolute;
   z-index: var(--gateway-z);
 
@@ -10,25 +9,21 @@
   align-items: center;
   justify-content: center;
 
-  /* Expansion animation */
   transition: width 250ms ease;
 
-  /* Optional: prevent layout shift from affecting others */
   overflow: hidden;
 
   background: gold;
 }
 
-/* Expanded state */
-.ml-gateway:hover {
+.gateway:hover {
   width: 12vw;
   height: 5vw;
   z-index: var(--gateway-open-z);
 }
 
-/* Doorway (always visible) */
-.ml-gateway__doorway,
-.ml-gateway__door {
+.gateway-doorway,
+.gateway-door {
   position: absolute;
   left: 0;
 
@@ -38,16 +33,15 @@
   pointer-events: none;
 }
 
-/* Door (fades out) */
-.ml-gateway__door {
+.gateway-door {
   transition: opacity 300ms ease;
 }
 
-.ml-gateway:hover .ml-gateway__door {
+.gateway:hover .gateway-door {
   opacity: 0;
 }
 
-.ml-gateway__link-container {
+.gateway-link-container {
     position: absolute;
     left: 5.5vw;
     width: 6vw;
@@ -56,8 +50,7 @@
     align-items: center;
 }
 
-/* Link (hidden initially) */
-.ml-gateway__link {
+.gateway-link {
   font-size: 1vw;
   text-decoration: none;
 }

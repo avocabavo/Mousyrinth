@@ -16,12 +16,17 @@ type BrickProps = {
 };
 
 export function Brick({ left, top, width, height }: BrickProps) {
-    const style = { left, top, width, height };
+    const style = {
+        "--closed-left": left,
+        "--closed-top": top,
+        "--closed-width": width,
+        "--closed-height": height
+    } as React.CSSProperties;
     return (
-        <div className="ml-brick" style={style}>
-            <div className="ml-brick__blocker">
-                <div className="ml-brick__wall"></div>
-            </div>
+        <div className="brick" style={style}>
+            {/* <div className="brick-blocker"> */}
+                <div className="brick-pattern"></div>
+            {/* </div> */}
         </div>
     );
 };

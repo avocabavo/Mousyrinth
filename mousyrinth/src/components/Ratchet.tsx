@@ -14,12 +14,12 @@ type RatchetProps = {
 export function Ratchet({ left, top }: RatchetProps) {
     const style = { left, top };
     return (
-        <div className="ml-ratchet" style={style}>
-            <div className="ml-ratchet__paddle"></div>
-            <div className="ml-ratchet__cw-arrow"></div>
-            <div className="ml-ratchet__ccw-arrow"></div>
+        <div className="ratchet" style={style}>
+            <div className="ratchet-paddle"></div>
+            <div className="ratchet-cw-arrow"></div>
+            <div className="ratchet-ccw-arrow"></div>
             <img
-                className="ml-ratchet__arrows"
+                className="ratchet-arrows"
                 src="/svg/ratchet-arrows.svg"
                 alt=""
                 draggable={false}
