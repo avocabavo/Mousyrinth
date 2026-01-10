@@ -31,7 +31,6 @@ export function Zapper({ left, top, width="5vw", height="5vw" }: ZapperProps) {
                 alt=""
                 draggable={false}
             />
-            {/* <div className="zapper__blocker"></div> */}
         </div>
     );
 }

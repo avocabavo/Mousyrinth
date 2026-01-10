@@ -34,14 +34,14 @@ The following maneuvers are fair game:
 
 ### Adding a Level
 
-1. Make a new .tsx file in Mousyrinth/mousyrinth/src/levels
+1. Make a new .tsx file in Mousyrinth/mousyrinth/src/levels from LevelTemplate.tsx
 1. Import that level in Mousyrinth/mousyrinth/src/App.tsx
 1. Create a route for that level in the same file
 1. Create links to and from that level using Gateway components
 
 ### Adding a Component
 
-1. Make new .tsx and .css files for that component in Mousyrinth/mousyrinth/src/components
+1. Make new .tsx and .css files for that component in Mousyrinth/mousyrinth/src/components from ComponentTemplate.tsx and ComponentTemplate.css
 1. Put z-index variables for the new component in Mousyrinth/mousyrinth/src/App.css for ease of comparison to other components' z-index
 1. Put svg icons in Mousyrinth/mousyrinth/public/svg if required
 1. Import and use the new component in a level
