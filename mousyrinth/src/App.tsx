@@ -6,6 +6,7 @@ import { Level3 } from "./levels/Level3";
 import { Level4 } from "./levels/Level4";
 import { Level5 } from "./levels/Level5";
 import { Level6 } from "./levels/Level6";
+import { ZapperSpiral } from "./levels/ZapperSpiral"
 import { Victory } from "./levels/Victory";
 
 import "./App.css";
@@ -19,6 +20,7 @@ function App() {
       <Route path="/level/4" element={<Level4 />} />
       <Route path="/level/5" element={<Level5 />} />
       <Route path="/level/6" element={<Level6 />} />
+      <Route path="/level/zapper-spiral" element={<ZapperSpiral />} />
       <Route path="/level/Victory" element={<Victory />} />
     </Routes>
   );
