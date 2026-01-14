@@ -8,6 +8,7 @@ import "./SolarSystem.css";
 type SolarSystemProps = {
     left: string;
     top: string;
+    rotation?: number;
     starAngularVelocity: number;   // degrees per second
     planetAngularVelocity: number; // degrees per second
     planetOrbitRadius: string;     // e.g. "6vw"
@@ -17,6 +18,7 @@ type SolarSystemProps = {
 export function SolarSystem({
     left,
     top,
+    rotation = 0,
     starAngularVelocity,
     planetAngularVelocity,
     planetOrbitRadius,
@@ -29,6 +31,7 @@ export function SolarSystem({
         "--planet-rotation-duration": `${360 / planetAngularVelocity}s`,
         "--planet-orbit-radius": planetOrbitRadius,
         "--moon-orbit-radius": moonOrbitRadius,
+        transform: `rotate(${rotation}deg)`,
      };
     return (
         <div

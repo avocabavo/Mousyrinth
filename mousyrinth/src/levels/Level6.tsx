@@ -51,14 +51,18 @@ export function Level6() {
                             <Zapper key={i} left={z.left} top={z.top} />
                         ))}
 
-                        <SolarSystem
-                            left="52.5vw"
-                            top="27.5vw"
-                            starAngularVelocity={20}
-                            planetAngularVelocity={80}
-                            planetOrbitRadius="20vw"
-                            moonOrbitRadius="5vw"
-                        />
+                        {[0, 90, 180, 270].map((r, i)=> (
+                            <SolarSystem
+                                key={i}
+                                left="52.5vw"
+                                top="27.5vw"
+                                rotation={r}
+                                starAngularVelocity={20}
+                                planetAngularVelocity={80}
+                                planetOrbitRadius="20vw"
+                                moonOrbitRadius="5vw"
+                            />
+                        ))}
 
                         <Gateway
                             left="85vw"
